@@ -15,12 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include=".\src\Test.h">
+    <ClInclude Include="src\Cactus\Core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include=".\src\Test.cpp">
+    <ClCompile Include="src\Cactus\Application.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
