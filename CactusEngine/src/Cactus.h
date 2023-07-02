@@ -2,7 +2,8 @@
 
 // For use by cactus application
 #include "Cactus/Application.h"
+#include "Cactus/Log.h"
 
-// ---Entry Point---
+// ---Entry Point--------------------
 #include "Cactus/EntryPoint.h"
-// -----------------
+// ----------------------------------
