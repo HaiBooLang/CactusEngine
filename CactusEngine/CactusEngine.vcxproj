@@ -15,6 +15,10 @@
     <ClInclude Include="src\Cactus.h" />
     <ClInclude Include="src\Cactus\Core.h" />
     <ClInclude Include="src\Cactus\EntryPoint.h" />
+    <ClInclude Include="src\Cactus\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Cactus\Events\Event.h" />
+    <ClInclude Include="src\Cactus\Events\KeyEvent.h" />
+    <ClInclude Include="src\Cactus\Events\MouseEvent.h" />
     <ClInclude Include="src\Cactus\Log.h" />
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Events">
+      <UniqueIdentifier>{bdc8b597-77ac-4451-b21e-9c8caa545c68}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Cactus\Core.h">
@@ -29,6 +32,18 @@
     </ClInclude>
     <ClInclude Include="src\Cactus\Log.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Events\Event.h">
+      <Filter>头文件\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Events\KeyEvent.h">
+      <Filter>头文件\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Events\MouseEvent.h">
+      <Filter>头文件\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Events\ApplicationEvent.h">
+      <Filter>头文件\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

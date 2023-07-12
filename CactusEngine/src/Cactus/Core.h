@@ -9,3 +9,5 @@
 #else
 	#error Cactus only support Windows!
 #endif // CC_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

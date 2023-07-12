@@ -1,6 +1,7 @@
 #pragma once
 
-#include"Core.h"
+#include "Core.h"
+#include "Application.h"
 
 namespace Cactus{
 
