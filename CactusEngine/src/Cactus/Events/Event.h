@@ -2,9 +2,6 @@
 
 #include "../Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Cactus {
 
 	enum class EventType

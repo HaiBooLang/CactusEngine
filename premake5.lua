@@ -18,6 +18,9 @@ project "CactusEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "ccpch.h"
+	pchsource "CactusEngine/src/ccpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

@@ -34,6 +34,7 @@
     <ClInclude Include="src\Cactus\Log.h">
       <Filter>Cactus</Filter>
     </ClInclude>
+    <ClInclude Include="src\ccpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Cactus\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Cactus\Log.cpp">
       <Filter>Cactus</Filter>
     </ClCompile>
+    <ClCompile Include="src\ccpch.cpp" />
   </ItemGroup>
 </Project>

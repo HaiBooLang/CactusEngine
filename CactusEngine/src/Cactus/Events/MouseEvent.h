@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Cactus {
 
 	class CACTUS_API MouseMovedEvent : public Event
