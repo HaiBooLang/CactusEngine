@@ -1,3 +1,6 @@
 [submodule "CactusEngine/vendor/spdlog"]
 	path = CactusEngine/vendor/spdlog
-	url = https://github.com/gabime/spdlog
+	url = https://github.com/HaiBooLang/spdlog
+[submodule "CactusEngine/vendor/GLFW"]
+	path = CactusEngine/vendor/GLFW
+	url = https://github.com/HaiBooLang/glfw

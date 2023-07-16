@@ -10,6 +10,11 @@ workspace "CactusEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "CactusEngine/vendor/GLFW/include"
+
+include "CactusEngine/vendor/GLFW"
+
 project "CactusEngine"
 	location "CactusEngine"
 	kind "SharedLib"
@@ -30,7 +35,14 @@ project "CactusEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
