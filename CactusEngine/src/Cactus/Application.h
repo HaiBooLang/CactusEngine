@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "Application.h"
 #include "Cactus/Window.h"
+#include "Cactus/Events/ApplicationEvent.h"
 
 namespace Cactus{
 
@@ -12,7 +13,11 @@ namespace Cactus{
 		Application();
 		virtual ~Application();
 
-		void Run();	
+		void Run();
+
+		void OnEvent(Event& e);
+	private:
+		bool OnWindowClosed(WindowCloseEvent& e);
 	private:
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
