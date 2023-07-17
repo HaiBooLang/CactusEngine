@@ -1,6 +1,7 @@
 #pragma once
 
-#include "../Core.h"
+#include "ccpch.h"
+#include "Cactus/Core.h"
 
 namespace Cactus {
 
@@ -33,7 +34,6 @@ namespace Cactus {
 
 	class CACTUS_API Event
 	{
-		friend class EventDispatcher;
 	public:
 		virtual	EventType	GetEventType()		const = 0;
 		virtual int			GetCategoryFlags()	const = 0;
@@ -41,8 +41,8 @@ namespace Cactus {
 		virtual std::string	ToString()			const { return GetName(); }
 
 		inline	bool		IsInCategory(EventCategory category)	{ return GetCategoryFlags() & category; }
-	protected:
-		bool m_Handled = false;
+	public:
+		bool Handled = false;
 	};
 
 	class EventDispatcher
@@ -58,7 +58,7 @@ namespace Cactus {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled = func(*(T*)&m_Event);
+				m_Event.Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
