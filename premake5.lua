@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "CactusEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "CactusEngine/vendor/Glad/include"
 
 include "CactusEngine/vendor/GLFW"
+include "CactusEngine/vendor/Glad"
 
 project "CactusEngine"
 	location "CactusEngine"
@@ -36,12 +38,14 @@ project "CactusEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "CactusEngine"
 		defines
 		{
 			"CC_PLATFORM_WINDOWS",
-			"CC_BUILD_DLL"
+			"CC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
