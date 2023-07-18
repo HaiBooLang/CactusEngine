@@ -4,3 +4,6 @@
 [submodule "CactusEngine/vendor/GLFW"]
 	path = CactusEngine/vendor/GLFW
 	url = https://github.com/HaiBooLang/glfw
+[submodule "CactusEngine/vendor/imgui"]
+	path = CactusEngine/vendor/imgui
+	url = https://github.com/HaiBooLang/imgui

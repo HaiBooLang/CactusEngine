@@ -397,4 +397,11 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# Intermediate binary file
 bin-int
+
+# Visual Studio project configuration files
+*.vcxproj
+*.filters
+*.sln
+Sandbox/imgui.ini
