@@ -15,9 +15,12 @@ IncludeDir["GLFW"] = "CactusEngine/vendor/GLFW/include"
 IncludeDir["Glad"] = "CactusEngine/vendor/Glad/include"
 IncludeDir["ImGui"] = "CactusEngine/vendor/imgui"
 
-include "CactusEngine/vendor/GLFW"
-include "CactusEngine/vendor/Glad"
-include "CactusEngine/vendor/imgui"
+group "Dependencies"
+	include "CactusEngine/vendor/GLFW"
+	include "CactusEngine/vendor/Glad"
+	include "CactusEngine/vendor/imgui"
+
+group ""
 
 project "CactusEngine"
 	location "CactusEngine"

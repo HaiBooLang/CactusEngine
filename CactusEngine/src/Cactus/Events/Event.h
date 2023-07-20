@@ -8,10 +8,10 @@ namespace Cactus {
 	enum class EventType
 	{
 		None = 0,
-		WindowClose,		WindowResize,			WindowFocus,	WindowLostFocus,	WinodeMoved,
-		AppTick,			AppUpdate,				AppRender,
-		KeyPressed,			KeyReleased,
-		MouseButtonPressed,	MouseButtonReleased,	MouseMoved,		MouseScrolled
+		WindowClose,		WindowResize,		WindowFocus,	WindowLostFocus,	WinodeMoved,
+		AppTick,			AppUpdate,			AppRender,
+		KeyPressed,			KeyReleased,		KeyTyped,
+		MouseButtonPressed,	MouseButtonReleased,MouseMoved,		MouseScrolled
 		// Gamepad
 	};
 
