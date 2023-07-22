@@ -10,12 +10,19 @@ public:
 
 	void OnUpdate() override
 	{
-		CC_INFO("ExampleLayer::Update");
+		if (Cactus::Input::IsKeyPressed(CC_KEY_TAB))
+			CC_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(Cactus::Event& event) override
 	{
-		CC_TRACE("{0}", event);
+		if (event.GetEventType() == Cactus::EventType::KeyPressed)
+		{
+			Cactus::KeyPressedEvent& e = (Cactus::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == CC_KEY_TAB)
+				CC_TRACE("Tab key is pressed (event)!");
+			CC_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 
 };
