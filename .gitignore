@@ -404,4 +404,7 @@ bin-int
 *.vcxproj
 *.filters
 *.sln
-Sandbox/imgui.ini
+
+imgui.ini
+
+*.vscode
