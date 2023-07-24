@@ -7,3 +7,6 @@
 [submodule "CactusEngine/vendor/imgui"]
 	path = CactusEngine/vendor/imgui
 	url = https://github.com/HaiBooLang/imgui
+[submodule "CactusEngine/vendor/glm"]
+	path = CactusEngine/vendor/glm
+	url = https://github.com/haiboolang/glm
