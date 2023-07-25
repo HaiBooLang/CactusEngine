@@ -408,3 +408,5 @@ bin-int
 imgui.ini
 
 *.vscode
+
+build/
